@@ -1,5 +1,7 @@
 # Nguyen_H_MiniApp
-An one-page application that shows MINI Canada car models and their information.
+An one-page application that shows MINI Canada car models and their information. Click on the car model, their information will pop up!
+
+![MINI Logo](images/logo.png)
 
 ### Description
 Built using [Vue](https://vuejs.org/), AJAX, Fetch API and Sass.
