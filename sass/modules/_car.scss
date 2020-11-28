@@ -1,0 +1,43 @@
+
+.car-button-modifier { text-decoration: none; }
+
+.bio-data { display: none; }
+
+.show-bio { 
+    display: block !important; 
+    padding: 20px;
+    background-color: $grey;
+    margin-top: 10px;
+    h3{
+        font-family: $sec-font;
+        font-size: 1.4em;
+    }
+    h4{
+        font-family: $main-font;
+        font-size: 1.2em;
+    }
+    p{
+        margin: 20px 0px;
+    }
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    a{
+        margin: 0 auto;
+    }
+    padding-bottom: 40px;
+
+    @include desktop{
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        a{
+            margin-left: 0px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.mainApp{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    #hero{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        img{
+            margin: 0 auto;
+            width: 100%;
+            @include tablet{
+                width: 80%;
+            }
+        }
+    }
+
+    .content{
+        h2{
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px 0px;
+            @include tablet{
+                font-size: 2em;
+            }
+        }
+    }
+}
