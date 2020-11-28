@@ -1,0 +1,35 @@
+#app{
+    font-family: $main-font;
+
+    a{
+        text-decoration: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+        #logo{
+            img{
+                width: 100px;
+            }
+        }
+    }
+
+    footer{
+        background-color: black;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+
+        #logo{
+            margin: 0 auto;
+            margin-bottom: 15px;
+            img{
+                width: 100px;
+            }
+        }
+    }
+
+}//End app

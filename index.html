@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App</title>
+    <link rel="stylesheet" href=css/reset.css>
+    <link rel="stylesheet" href=css/master.css>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <main id="app">
+        <header>
+            <div id="logo">
+                <img src="images/logo.png" alt="Mini Logo">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">MODEL</a></li>
+                    <li><a href="#">TOOLS</a></li>
+                    <li><a href="#">DISCOVER</a></li>
+                    <li><a href="#">OWNERS</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="mainApp">
+            <div id="hero">
+                <img src="images/hero.jpg" alt="Banner">
+            </div>
+
+            <section class="content">
+                <h2>LATEST MODELS</h2>
+                <section class="models">
+                    <car-card v-for="car in models" :car="car" key="car.id"></car-card>
+                </section><!--end models-->
+            </section><!--end contents-->
+
+        </section><!--End mainApp-->
+
+        <footer>
+            <div id="logo">
+                <img src="images/footer_logo.png" alt="Mini Logo">
+            </div>
+            <div id="footerNav">
+                <ul>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">COOKIES & ADS</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                    <li><a href="#">UNSUBSCRIBE</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script src="js/main.js" type="module"></script>
+</html>
